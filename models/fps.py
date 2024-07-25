@@ -1,6 +1,6 @@
 import cv2
 import time
-from ultralytics import YOLO  # Assuming you're using the ultralytics YOLO implementation
+from ultralytics import YOLO
 import torch
 
 class SecondObjectDetection:
@@ -9,10 +9,10 @@ class SecondObjectDetection:
         self.width = 960
         self.height = 800
         self.fps_list = []
-        self.model = None  # Initialize the model attribute
+        self.model = None  
 
     
-        self.model = YOLO("D:\modeller/v8s.pt").to('cuda' if torch.cuda.is_available() else 'cpu')
+        self.model = YOLO("\directory\").to('cuda' if torch.cuda.is_available() else 'cpu')
         
 
     def process_frame(self):
@@ -23,7 +23,7 @@ class SecondObjectDetection:
         ret, frame = self.cap.read()
         if not ret:
             print("Failed to grab frame")
-            return None  # Return None if no frame is grabbed
+            return None  
 
         # Detect objects with the model
         detections = self.model(frame, verbose=False)
@@ -34,7 +34,7 @@ class SecondObjectDetection:
                 x1, y1, x2, y2 = int(x1), int(y1), int(x2), int(y2)
                 cv2.rectangle(frame, (x1, y1), (x2, y2), (255, 0, 255), 3)
 
-        return frame  # Return the processed frame
+        return frame 
 
     def process_fe(self):
         if self.model is None:
@@ -46,7 +46,7 @@ class SecondObjectDetection:
             ret, frame = self.cap.read()
             if not ret:
                 print("Failed to grab frame")
-                return None  # Return None if no frame is grabbed
+                return None  
 
             current_time = time.time()
             fps = 1 / (current_time - prev_time)
@@ -54,7 +54,7 @@ class SecondObjectDetection:
             
             prev_time = current_time
 
-            # Detect objects with the model
+            
             frame_resized = cv2.resize(frame, (960, 800))
             detections = self.model(frame_resized, verbose=False, conf=0.5)
             for detection in detections:
@@ -76,7 +76,7 @@ class SecondObjectDetection:
 
 # To run this code
 if __name__ == "__main__":
-    cap = cv2.VideoCapture("D:\modeller\ex.mp4")
+    cap = cv2.VideoCapture("\directory\ex.mp4")
 
     fr = SecondObjectDetection(cap)
     
