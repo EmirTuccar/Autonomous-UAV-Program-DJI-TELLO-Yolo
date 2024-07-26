@@ -1,3 +1,13 @@
+pale_n trained model is for plate detection with yolov8 nano trained with roboflow plate recognition 4xge dataset
+
+yolov8n-face is trained with WİDERFACE dataset(this model taken from other repostory, I will ad citation)
+
+yolo8nvis trained model for vehicle and human detection with yolov8 nano, trained with VisDrone dataset
+
+
+
+
+
 Yolo versions trained models with Visdrone dataset 
 
 Yolov8 Nano
