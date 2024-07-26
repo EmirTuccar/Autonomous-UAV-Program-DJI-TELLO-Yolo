@@ -10,3 +10,5 @@ This project is designed for the DJI Tello drone, utilizing trained YOLO models 
 
 
 The project is still under development. Some code components, such as PID controllers, have been adapted from other repositories. Proper citations for these will be include
+
+!!Requirments wil be added!!
