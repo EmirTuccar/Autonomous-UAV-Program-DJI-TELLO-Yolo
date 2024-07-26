@@ -7,4 +7,6 @@ This project is designed for the DJI Tello drone, utilizing trained YOLO models 
 4. Vehicle and Human Detection
 5. Vehicle Tracking with Autonomous Drone Movement
 6. DJI Tello Movement Controls
+
+
 The project is still under development. Some code components, such as PID controllers, have been adapted from other repositories. Proper citations for these will be include
