@@ -1,6 +1,10 @@
-# Autonomous-UAV-Program-DJI-TELLO-Yolo
-This is a project for dji tello with the trained yolo models
+## DJI Tello Autonomous GUI Program
+This project is designed for the DJI Tello drone, utilizing trained YOLO models to enable a range of autonomous features. These features include:
 
-This Project involves a couple features for dji tello autonomous GUI program like face recognition, plate detection and plate ocr reading, face detection, vehicle and human detection, vehicle tracking with the autonomous drone movement for dji tello, and dji tello movement buttons.
-
-This project still continuing to develop, and there can be a couple code which from taken some other repostories liek pid. I will add their citation.
+1. Face Detection
+2. Face Recognition
+3. License Plate Detection and OCR Reading
+4. Vehicle and Human Detection
+5. Vehicle Tracking with Autonomous Drone Movement
+6. DJI Tello Movement Controls
+The project is still under development. Some code components, such as PID controllers, have been adapted from other repositories. Proper citations for these will be include
