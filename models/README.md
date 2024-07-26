@@ -8,7 +8,7 @@ yolo8nvis trained model for vehicle and human detection with yolov8 nano, traine
 
 
 
-##Yolo versions trained models with Visdrone dataset 
+## Yolo versions trained models with Visdrone dataset 
 
 Yolov8 Nano
 
