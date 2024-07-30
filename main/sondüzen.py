@@ -3,8 +3,8 @@ from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QPushButton, QHBoxLay
 from PyQt5.QtGui import QImage, QPixmap
 from PyQt5.QtCore import QTimer, Qt
 from yolo_face_copy import FaceDetection
-from modeleval import SecondObjectDetection
-from pat import IntegratedObjectDetection
+from car import SecondObjectDetection
+from plate import IntegratedObjectDetection
 from trackerKCF import RealTimeTracker
 from tello import TelloController
 import sys
