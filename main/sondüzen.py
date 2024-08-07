@@ -2,7 +2,7 @@ import cv2
 from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QPushButton, QHBoxLayout, QVBoxLayout, QLineEdit, QFrame, QSizePolicy, QSpacerItem
 from PyQt5.QtGui import QImage, QPixmap
 from PyQt5.QtCore import QTimer, Qt
-from yolo_face_copy import FaceDetection
+from face import FaceDetection
 from car import SecondObjectDetection
 from plate import IntegratedObjectDetection
 from trackerKCF import RealTimeTracker
